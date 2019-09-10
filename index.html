@@ -28,7 +28,7 @@
             </div>
         </header>
 
-        <div class="container float-left">
+        <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
                     <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
@@ -48,9 +48,9 @@
                         <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#References" role="tab" aria-controls="v-pills-profile" aria-selected="false">References</a>
                     </div>
                 </div>
-
-                <main id="main-doc">
-                    <div class="col-12 col-sm-8 col-md-8 col-lg-8 col-xl-8">
+                
+                <div class="col-12 col-sm-8 col-md-8 col-lg-8 col-xl-8">
+                    <main id="main-doc">
                         <section id="Introduction" class="main-section">
                             <h2>
                                 Introduction
@@ -74,16 +74,49 @@
                             <h2>
                                 What You Should Already Know
                             </h2>
+                            <p>
+                                This guide assumes you have the following basic background:
+                            </p>
+                            <ul>
+                                <li>
+                                    A general understanding of the Internet and the World Wide Web (WWW).
+                                </li>
+                                <li>
+                                    Good working knowledge of HyperText Markup Language (HTML).
+                                </li>
+                                <li>
+                                    Some programming experience. If you are new to programming, try one of the tutorials linked on the main page about JavaScript.
+                                </li>
+                            </ul>
                         </section>
                         <section id="JavaScript_and_Java" class="main-section">
                             <h2>
                                 JavaScript and Java
                             </h2>
+                            <p>
+                                JavaScript and Java are similar in some ways but fundamentally different in some others. The JavaScript language resembles Java but does not have Java's static typing and strong type checking. JavaScript follows most Java expression syntax, naming conventions and basic control-flow constructs which was the reason why it was renamed from LiveScript to JavaScript.
+                            </p>
+                            <p>
+                                In contrast to Java's compile-time system of classes built by declarations, JavaScript supports a runtime system based on a small number of data types representing numeric, Boolean, and string values. JavaScript has a prototype-based object model instead of the more common class-based object model. The prototype-based model provides dynamic inheritance; that is, what is inherited can vary for individual objects. JavaScript also supports functions without any special declarative requirements. Functions can be properties of objects, executing as loosely typed methods.
+                            </p>
+                            <p>
+                                JavaScript is a very free-form language compared to Java. You do not have to declare all variables, classes, and methods. You do not have to be concerned with whether methods are public, private, or protected, and you do not have to implement interfaces. Variables, parameters, and function return types are not explicitly typed.
+                            </p>
                         </section>
                         <section id="Hello_world" class="main-section">
                             <h2>
                                 Hello World
                             </h2>
+                            <p>
+                                To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:
+                            </p>
+                            <code>
+                                function greetMe(yourName) { alert("Hello " + yourName); }
+                                greetMe("World");
+                            </code>
+                            <p>
+                                Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!
+                            </p>
                         </section>
                         <section id="Variables" class="main-section">
                             <h2>
@@ -135,8 +168,8 @@
                                 References
                             </h2>
                         </section>
-                    </div>
-                </main>
+                    </main>
+                </div>
             </div>
         </div>
     </nav>
