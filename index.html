@@ -32,20 +32,20 @@
             <div class="row">
                 <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
                     <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                        <a class="nav-link active" data-toggle="pill" href="/#Introduction" role="tab" aria-controls="v-pills-home" aria-selected="true">Introduction</a>
-                        <a class="nav-link" data-toggle="pill" href="/#What_you_should_already_know" role="tab" aria-controls="v-pills-profile" aria-selected="false">What you should already know</a>
-                        <a class="nav-link" data-toggle="pill" href="/#JavaScript_and_Java">JavaScript and Java</a>
-                        <a class="nav-link" data-toggle="pill" href="/#Hello_world">Hello world</a>
-                        <a class="nav-link" data-toggle="pill" href="/#Variables">Variables</a>
-                        <a class="nav-link" data-toggle="pill" href="/#Declaring_variables">Declaring variables</a>
-                        <a class="nav-link" data-toggle="pill" href="/#Variable_scope">Variable scope</a>
-                        <a class="nav-link" data-toggle="pill" href="/#Global_variables">Global variables</a>
-                        <a class="nav-link" data-toggle="pill" href="/#Constants">Constants</a>
-                        <a class="nav-link" data-toggle="pill" href="/#Data_types">Data types</a>
-                        <a class="nav-link" data-toggle="pill" href="/#if...else statement">if...else statement</a>
-                        <a class="nav-link" data-toggle="pill" href="/#while_statement">while statement</a>
-                        <a class="nav-link" data-toggle="pill" href="/#Function_declarations">Function declarations</a>
-                        <a class="nav-link" data-toggle="pill" href="/#References">References</a>
+                        <a class="nav-link active" data-toggle="pill" href="#Introduction" role="tab" aria-controls="v-pills-home" aria-selected="true">Introduction</a>
+                        <a class="nav-link" data-toggle="pill" href="#What_you_should_already_know" role="tab" aria-controls="v-pills-profile" aria-selected="false">What you should already know</a>
+                        <a class="nav-link" data-toggle="pill" href="#JavaScript_and_Java">JavaScript and Java</a>
+                        <a class="nav-link" data-toggle="pill" href="#Hello_world">Hello world</a>
+                        <a class="nav-link" data-toggle="pill" href="#Variables">Variables</a>
+                        <a class="nav-link" data-toggle="pill" href="#Declaring_variables">Declaring variables</a>
+                        <a class="nav-link" data-toggle="pill" href="#Variable_scope">Variable scope</a>
+                        <a class="nav-link" data-toggle="pill" href="#Global_variables">Global variables</a>
+                        <a class="nav-link" data-toggle="pill" href="#Constants">Constants</a>
+                        <a class="nav-link" data-toggle="pill" href="#Data_types">Data types</a>
+                        <a class="nav-link" data-toggle="pill" href="#if_else_statement">if...else statement</a>
+                        <a class="nav-link" data-toggle="pill" href="#while_statement">while statement</a>
+                        <a class="nav-link" data-toggle="pill" href="#Function_declarations">Function declarations</a>
+                        <a class="nav-link" data-toggle="pill" href="#References">References</a>
                     </div>
                 </div>
                 
@@ -171,6 +171,22 @@
                             <header class="secHeaders text-center mt-4 mb-3">
                                 Variable Scope
                             </header>
+                            <p>
+                                When you declare a variable outside of any function, it is called a global variable, because it is available to any other code in the current document. When you declare a variable within a function, it is called a local variable, because it is available only within that function.
+                            </p>
+                            <p>
+                                JavaScript before ECMAScript 2015 does not have block statement scope; rather, a variable declared within a block is local to the function (or global scope) that the block resides within. For example the following code will log 5, because the scope of x is the function (or global context) within which x is declared, not the block, which in this case is an if statement.
+                            </p>
+                            <code class="codeSec p-2">
+                                if (true) { var x = 5; } console.log(x); // 5
+                            </code>
+                            <p>
+                                This behavior changes, when using the let declaration introduced in ECMAScript 2015.
+                            </p>
+                            <code class="codeSec p-2">
+                                if (true) { let y = 5; } console.log(y); // ReferenceError: y is not
+                                defined
+                            </code>
                         </section>
                         <section id="Global_variables" class="main-section">
                             <header class="secHeaders text-center mt-4 mb-3">
@@ -187,7 +203,7 @@
                                 Data Types
                             </header>
                         </section>
-                        <section id="if...else statement" class="main-section">
+                        <section id="if_else_statement" class="main-section">
                             <header class="secHeaders text-center mt-4 mb-3">
                                 If...Else Statement
                             </header>
